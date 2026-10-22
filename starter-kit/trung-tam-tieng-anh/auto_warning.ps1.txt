@@ -1,0 +1,8 @@
+# Tac gia: Nguyen Van A
+# Ngay tao: 21/10/2026
+
+Write-Host "Dang loc canh bao thanh toan..."
+"=== CANH BAO THANH TOAN ===" > HOAN_THIEN
+gc logs/payment.log | Select-string "Warning" > logs/warning_report.txt
+
+Write-Host "Hoan thanh!"
